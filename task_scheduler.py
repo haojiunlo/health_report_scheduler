@@ -25,6 +25,7 @@ def job():
 
     input_submit = driver.find_element_by_id("btn")
     input_submit.click()
+    driver.switch_to_alert().accept()
     driver.close()
     print("Job done")
 
