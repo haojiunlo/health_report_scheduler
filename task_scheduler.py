@@ -11,7 +11,7 @@ scheduler = BlockingScheduler()
 def job():
     print(f"Job start at {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))}")
     driver = webdriver.Chrome("chromedriver")
-    driver.get("https://familyweb.wistron.com/whrs/login.aspx")
+    driver.get("https://xxxx/login.aspx")
     
     input_employ_id = driver.find_element_by_id("userpass")
     input_employ_id.send_keys(args.employ_id)
